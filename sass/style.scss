@@ -14,11 +14,19 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: hsl(257, 40%, 49%);
     height: 100vh;
+    margin: 0 5em;
 }
 
 .wrapper{
     margin: 0 auto;
     width: 100%;
     max-width: 1440px;
+}
+
+.header{
+    &__logo{
+        margin: 5em 0;
+    }
 }
