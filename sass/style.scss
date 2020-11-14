@@ -27,24 +27,28 @@ body {
 }
 
 .header{
-    &__logo{
-        margin: 5em 0;
-    }
+    display: flex;
+    align-items: center;
+    height: 21vh;
 }
 
 main{
-    display: flex;
-    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    height: 75vh;
     .hero{
+        grid-column: 1/4;
         &__img{
-            background-image: url('/img/illustration-mockups.svg');
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
             height: 100%;
-            width: 50vw;
+            max-width: 100%;
         }
     } 
+
+    
+}
+
+footer{
+    height: 4vh;
 }
 
 // font-family: 'Poppins', sans-serif;

@@ -27,23 +27,36 @@ body {
   max-width: 1440px;
 }
 
-.header__logo {
-  margin: 5em 0;
-}
-
-main {
+.header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 80vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 21vh;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  height: 75vh;
+}
+
+main .hero {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
 }
 
 main .hero__img {
-  background-image: url("/img/illustration-mockups.svg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   height: 100%;
-  width: 50vw;
+  max-width: 100%;
+}
+
+footer {
+  height: 4vh;
 }
 /*# sourceMappingURL=style.css.map */
