@@ -34,29 +34,38 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 21vh;
+  height: 20vh;
 }
 
 main {
   display: -ms-grid;
   display: grid;
+  gap: 80px;
   -ms-grid-columns: (1fr)[5];
       grid-template-columns: repeat(5, 1fr);
-  height: 75vh;
+  height: 70vh;
 }
 
 main .hero {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1/4;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 main .hero__img {
-  height: 100%;
+  height: auto;
   max-width: 100%;
 }
 
+main .form {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
+  grid-column: 4/6;
+}
+
 footer {
-  height: 4vh;
+  height: 10vh;
 }
 /*# sourceMappingURL=style.css.map */

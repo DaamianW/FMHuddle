@@ -29,26 +29,30 @@ body {
 .header{
     display: flex;
     align-items: center;
-    height: 21vh;
+    height: 20vh;
 }
 
 main{
     display: grid;
+    gap: 80px;
     grid-template-columns: repeat(5, 1fr);
-    height: 75vh;
+    height: 70vh;
     .hero{
         grid-column: 1/4;
+        justify-self: center;
         &__img{
-            height: 100%;
+            height: auto;
             max-width: 100%;
         }
     } 
 
-    
+    .form{
+        grid-column: 4/6;
+    }
 }
 
 footer{
-    height: 4vh;
+    height: 10vh;
 }
 
 // font-family: 'Poppins', sans-serif;
