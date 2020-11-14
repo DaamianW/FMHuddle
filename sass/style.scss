@@ -9,14 +9,15 @@ html {
 }
 
 body {
+    height: 100vh;
+    margin: 0 5em;
     font-size: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
     background-image: url('/img/bg-desktop.svg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-color: hsl(257, 40%, 49%);
-    height: 100vh;
-    margin: 0 5em;
 }
 
 .wrapper{
@@ -30,3 +31,20 @@ body {
         margin: 5em 0;
     }
 }
+
+main{
+    display: flex;
+    height: 80vh;
+    .hero{
+        &__img{
+            background-image: url('/img/illustration-mockups.svg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100%;
+            width: 50vw;
+        }
+    } 
+}
+
+// font-family: 'Poppins', sans-serif;

@@ -10,14 +10,15 @@ html {
 }
 
 body {
+  height: 100vh;
+  margin: 0 5em;
   font-size: 1.6rem;
+  font-family: 'Open Sans', sans-serif;
   background-image: url("/img/bg-desktop.svg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #674baf;
-  height: 100vh;
-  margin: 0 5em;
 }
 
 .wrapper {
@@ -28,5 +29,21 @@ body {
 
 .header__logo {
   margin: 5em 0;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80vh;
+}
+
+main .hero__img {
+  background-image: url("/img/illustration-mockups.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 50vw;
 }
 /*# sourceMappingURL=style.css.map */
