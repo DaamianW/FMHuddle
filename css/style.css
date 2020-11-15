@@ -63,6 +63,41 @@ main .form {
   -ms-grid-column: 4;
   -ms-grid-column-span: 2;
   grid-column: 4/6;
+  color: white;
+}
+
+main .form__title--font {
+  font-family: 'Poppins', sans-serif;
+}
+
+main .form__title {
+  margin: 1.5em 0;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  line-height: 1.5;
+}
+
+main .form__text {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+main .form__btn {
+  margin: 2em 0;
+  padding: .7em 2.2em;
+  width: 47%;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 4.5px 3.6px rgba(0, 0, 0, 0.018), 0 12.5px 10px rgba(0, 0, 0, 0.028), 0 30.1px 24.1px rgba(0, 0, 0, 0.038), 0 100px 80px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 4.5px 3.6px rgba(0, 0, 0, 0.018), 0 12.5px 10px rgba(0, 0, 0, 0.028), 0 30.1px 24.1px rgba(0, 0, 0, 0.038), 0 100px 80px rgba(0, 0, 0, 0.07);
+  text-decoration: none;
+  text-align: center;
+  background-color: #fff;
+}
+
+main .form__btn a {
+  text-decoration: none;
+  color: #635463;
 }
 
 footer {

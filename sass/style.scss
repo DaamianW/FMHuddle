@@ -20,38 +20,79 @@ body {
     background-color: hsl(257, 40%, 49%);
 }
 
-.wrapper{
+.wrapper {
     margin: 0 auto;
     width: 100%;
     max-width: 1440px;
 }
 
-.header{
+.header {
     display: flex;
     align-items: center;
     height: 20vh;
 }
 
-main{
+main {
     display: grid;
     gap: 80px;
     grid-template-columns: repeat(5, 1fr);
     height: 70vh;
-    .hero{
+
+    .hero {
         grid-column: 1/4;
         justify-self: center;
-        &__img{
+
+        &__img {
             height: auto;
             max-width: 100%;
         }
-    } 
+    }
 
-    .form{
+    .form {
         grid-column: 4/6;
+        color: white;
+
+        &__title--font {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        &__title {
+            margin: 1.5em 0;
+            font-size: 2rem;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            line-height: 1.5;
+
+        }
+
+        &__text {
+            font-size: 1.6rem;
+            line-height: 1.5;
+        }
+
+        &__btn {
+            margin: 2em 0;
+            padding: .7em 2.2em;
+            width: 47%;
+            border-radius: 50px;
+            box-shadow:
+                0 4.5px 3.6px rgba(0, 0, 0, 0.018),
+                0 12.5px 10px rgba(0, 0, 0, 0.028),
+                0 30.1px 24.1px rgba(0, 0, 0, 0.038),
+                0 100px 80px rgba(0, 0, 0, 0.07);
+            text-decoration: none;
+            text-align: center;
+            background-color: #fff;
+
+            a {
+                text-decoration: none;
+                color: hsl(300, 8%, 36%);
+            }
+        }
     }
 }
 
-footer{
+footer {
     height: 10vh;
 }
 
