@@ -77,8 +77,8 @@ main .form__btn {
   background-color: #fff;
   text-decoration: none;
   color: #635463;
-  -webkit-transition: background-color .4s;
-  transition: background-color .4s;
+  -webkit-transition: background-color .4s, color .4s;
+  transition: background-color .4s, color .4s;
 }
 
 main .form__btn:hover {
