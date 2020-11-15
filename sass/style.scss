@@ -70,38 +70,46 @@ main {
             line-height: 1.5;
         }
 
-        &__btn {
-            margin: 2em 0;
+
+
+        a {
+            &:hover {
+                background-color: hsl(300, 69%, 71%);
+                color: hsl(0, 0%, 100%);
+            }
+            display: inline-block;
+            cursor: pointer;
+            margin: 3em 0;
             padding: .7em 2.2em;
             width: 47%;
             border-radius: 50px;
-            box-shadow:
-                0 4.5px 3.6px rgba(0, 0, 0, 0.018),
-                0 12.5px 10px rgba(0, 0, 0, 0.028),
-                0 30.1px 24.1px rgba(0, 0, 0, 0.038),
-                0 100px 80px rgba(0, 0, 0, 0.07);
+            box-shadow: 0 4.5px 3.6px rgba(0, 0, 0, 0.018),
+            0 12.5px 10px rgba(0, 0, 0, 0.028),
+            0 30.1px 24.1px rgba(0, 0, 0, 0.038),
+            0 100px 80px rgba(0, 0, 0, 0.07);
             text-decoration: none;
             text-align: center;
             background-color: #fff;
-
-            a {
-                text-decoration: none;
-                color: hsl(300, 8%, 36%);
-            }
+            text-decoration: none;
+            color: hsl(300, 8%, 36%);
         }
+
+
+
     }
 }
 
 footer {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     height: 10vh;
 
     .socials {
         display: flex;
         justify-content: space-between;
         width: 20%;
+
         &__circle {
             display: flex;
             flex-direction: column;
@@ -112,17 +120,25 @@ footer {
             border: 2px solid white;
             border-radius: 50%;
 
-            &--fb,&--tw,&--is{
+            &--fb,
+            &--tw,
+            &--is {
                 font-size: 2.5rem;
                 color: white;
             }
         }
 
+        &__circle:hover {
+            color: hsl(300, 69%, 71%);
+            border: 2px solid hsl(300, 69%, 71%);
+        }
+
     }
 
-    .attribution{
+    .attribution {
         font-size: 1.5rem;
-        a{
+
+        a {
             text-decoration: none;
             color: hsl(258, 16%, 12%);
         }

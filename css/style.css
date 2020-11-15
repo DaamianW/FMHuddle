@@ -83,8 +83,10 @@ main .form__text {
   line-height: 1.5;
 }
 
-main .form__btn {
-  margin: 2em 0;
+main .form a {
+  display: inline-block;
+  cursor: pointer;
+  margin: 3em 0;
   padding: .7em 2.2em;
   width: 47%;
   border-radius: 50px;
@@ -93,11 +95,13 @@ main .form__btn {
   text-decoration: none;
   text-align: center;
   background-color: #fff;
-}
-
-main .form__btn a {
   text-decoration: none;
   color: #635463;
+}
+
+main .form a:hover {
+  background-color: #e882e8;
+  color: white;
 }
 
 footer {
@@ -107,9 +111,9 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   height: 10vh;
 }
 
@@ -146,6 +150,11 @@ footer .socials__circle {
 footer .socials__circle--fb, footer .socials__circle--tw, footer .socials__circle--is {
   font-size: 2.5rem;
   color: white;
+}
+
+footer .socials__circle:hover {
+  color: #e882e8;
+  border: 2px solid #e882e8;
 }
 
 footer .attribution {
