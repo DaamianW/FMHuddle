@@ -103,4 +103,15 @@ main .form__btn a {
 footer {
   height: 10vh;
 }
+
+footer .socials__circle {
+  height: 50px;
+  width: 50px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+footer .socials__circle--fb {
+  background-image: url("/img/fb.svg");
+}
 /*# sourceMappingURL=style.css.map */

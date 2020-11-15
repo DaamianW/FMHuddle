@@ -94,6 +94,24 @@ main {
 
 footer {
     height: 10vh;
-}
 
-// font-family: 'Poppins', sans-serif;
+    .socials {
+        &__circle {
+            height: 50px;
+            width: 50px;
+            border: 2px solid white;
+            border-radius: 50%;
+            &--fb{
+                background-image: url('/img/fb.svg');
+                
+            }
+            &--tw{
+
+            }
+            &--is{
+
+            }
+        }
+
+    }
+}
