@@ -112,7 +112,7 @@ footer {
         display: flex;
         justify-content: end;
         order: 1;
-
+        float: right;
         &__circle {
             cursor: pointer;
             display: flex;
