@@ -101,17 +101,59 @@ main .form__btn a {
 }
 
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 10vh;
 }
 
+footer .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 20%;
+}
+
 footer .socials__circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 50px;
   width: 50px;
   border: 2px solid white;
   border-radius: 50%;
 }
 
-footer .socials__circle--fb {
-  background-image: url("/img/fb.svg");
+footer .socials__circle--fb, footer .socials__circle--tw, footer .socials__circle--is {
+  font-size: 2.5rem;
+  color: white;
+}
+
+footer .attribution {
+  font-size: 1.5rem;
+}
+
+footer .attribution a {
+  text-decoration: none;
+  color: #1d1a23;
 }
 /*# sourceMappingURL=style.css.map */
