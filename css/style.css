@@ -118,7 +118,7 @@ footer .socials {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
-  float: right;
+  margin-left: auto;
 }
 
 footer .socials__circle {
